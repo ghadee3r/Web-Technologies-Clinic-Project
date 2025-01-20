@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURA-Log In</title>
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="booking.css">
+
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="" alt="Clinic Logo" class="logo">
+        <h1 class="clinic-name">CURA</h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Log In</a>
+        <a href="signup.html">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Breadcrumb Navigation -->
+  <nav class="breadcrumb">
+    <a href="home.html">Home</a> &gt; 
+    <a href="patient_home.html">Patient Homepage</a> &gt; 
+    <span>Appointment Booking</span>
+  </nav>
+
+  <!-- Appointment Booking Forms -->
+  <main class="booking-container">
+    <h2>Book an Appointment</h2>
+    <p>Select your desired specialty and fill in the details below.</p>
+
+    <!-- First Form: Specialty Selection -->
+    <form class="specialty-form">
+      <div class="form-group">
+        <label for="specialty">Choose a Specialty:</label>
+        <select id="specialty" name="specialty" required>
+          <option value="" disabled selected>Select a specialty</option>
+          <option value="cardiology">Cardiology</option>
+          <option value="dentistry">Dentistry</option>
+          <option value="dermatology">Dermatology</option>
+          <option value="pediatrics">Pediatrics</option>
+        </select>
+      </div>
+      <button type="submit" class="submit-button">Next</button>
+    </form>
+
+    <!-- Second Form: Appointment Details -->
+    <form class="appointment-form">
+      <div class="form-group">
+        <label for="doctor">Choose a Doctor:</label>
+        <select id="doctor" name="doctor" required>
+          <option value="" disabled selected>Select a doctor</option>
+          <!-- Options will be dynamically populated based on specialty -->
+          <option value="doctor1">Dr. John Doe</option>
+          <option value="doctor2">Dr. Jane Smith</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="time">Select Time:</label>
+        <input type="time" id="time" name="time" required>
+      </div>
+
+      <div class="form-group">
+        <label for="reason">Reason for Visit:</label>
+        <textarea id="reason" name="reason" rows="4" placeholder="Briefly describe the reason for your visit..." required></textarea>
+      </div>
+
+      <button type="submit" class="submit-button">Book Appointment</button>
+    </form>
+  </main>
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <p>Contact Us:</p>
+        <p>
+          <img src="twitter.webp" alt="Twitter Icon" class="social-icon"> @CURA
+        </p>
+        <p>
+          <img src="instagram.webp" alt="Instagram Icon" class="social-icon"> @CURA
+        </p>
+        <p>
+          <img src="email.png" alt="Email Icon" class="social-icon"> CURA@gmail.com
+        </p>
+      </div>
+      <div class="footer-right">
+        &copy; 2025 CURA
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+  
