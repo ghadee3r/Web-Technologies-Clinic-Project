@@ -1,0 +1,89 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    color: #1B2A1D;
+  }
+  
+  a {
+    font-weight: bold;
+    color: #E1B599;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #9EA677;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #1B2A1D;
+    color: #E1B599;
+    padding: 15px 0;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .clinic-name {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  nav a {
+    font-size: 1rem;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #9EA677;
+    color: #1B2A1D;
+    padding: 20px 0;
+
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-left p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+  
+  .social-icon {
+    width: 1.25em;
+    height: 1.25em;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  .footer-right {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
