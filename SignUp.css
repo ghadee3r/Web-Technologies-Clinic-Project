@@ -1,0 +1,70 @@
+﻿
+.signup-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 700px;
+    height:700px; 
+}
+#role-selection{
+    display:flex;
+    justify-content:center;
+    
+}
+
+.hidden {
+    display: none;
+
+}
+
+.signup-container input, .signup-container select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+label {
+    text-align: center;
+    font-weight: bold;
+}
+
+.radio-group{
+    display:flex;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    width: 80%;
+    padding: 10px;
+    background-color: #1B2A1D;
+    color: #E1B599;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover {
+        background-color: #9EA677;
+    }
+
+.signup-container h1 {
+    text-align:center;
+    margin-bottom: 20px;
+}
+ 
