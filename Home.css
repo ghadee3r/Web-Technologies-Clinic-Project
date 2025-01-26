@@ -1,5 +1,5 @@
 ﻿
-.home-container {
+/*.home-container {
     background-color: #fff;
     padding: 20px;
     margin-bottom: 200px;
@@ -8,6 +8,7 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+
 }
 
 #home-button {
@@ -35,4 +36,201 @@
 
 #home-h1 {
     padding-bottom: 35px;
+}*/
+
+/* Home Page CSS */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #E5DDDE; /* Mauve from color palette */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
+/* Navbar Styles */
+.navbar {
+    background-color: #A1AD95; 
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+    .navbar .logo {
+        display: flex;
+        align-items: center;
+    }
+
+        .navbar .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar .logo  {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+    .navbar .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+            .navbar .nav-links a:hover {
+                color: #A1AD95; /* Khaki from color palette */
+            }
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/homeMain.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+    flex: 1;
+}
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero p {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero .btn {
+    background-color: #EBFACF; /* Lime from color palette */
+    color: #002324; /* Black from color palette */
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+    .hero .btn:hover {
+        background-color: #A1AD95; /* Khaki from color palette */
+    }
+
+.hero .btn-alt {
+    background-color: white;
+    color: #002324; /* Black from color palette */
+}
+
+    .hero .btn-alt:hover {
+        background-color: #f4f4f4;
+    }
+
+/* About Us Section */
+.about {
+    padding: 3rem 1rem;
+    background-color: #FFFFFF; /* Background color for the section */
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-left {
+    flex: 1;
+    text-align: center;
+}
+
+    .about-left img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+.about-right {
+    flex: 1;
+    padding: 1rem;
+}
+
+    .about-right h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #002324; /* Black from the palette */
+    }
+
+    .about-right p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        color: #555; /* Soft text color */
+    }
+
+.about-list {
+    list-style: none;
+    padding: 0;
+}
+
+    .about-list li {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+        color: #002324; /* Black from the palette */
+    }
+
+.check-icon {
+    margin-right: 0.5rem;
+    color: #EFB6A2; /* Accent color */
+    font-size: 1.25rem;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #A1AD95; /* Black from color palette */
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: auto;
+}
+
+    .footer .social-links {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin: 1rem 0 0;
+        padding: 0;
+    }
+
+        .footer .social-links img {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s;
+        }
+
+            .footer .social-links img:hover {
+                transform: scale(1.1);
+            }
