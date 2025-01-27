@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,7 +29,7 @@
                 <label>
                     <input type="radio" name="role" value="patient" checked onchange="showForm()"> Patient
                 </label>
-                 
+
                 <label>
                     <input type="radio" name="role" value="doctor" onchange="showForm()"> Doctor
                 </label>
@@ -61,7 +61,7 @@
             </div>
 
             <div id="patient-dob">
-                <span>Date of Birth</span> 
+                <span>Date of Birth</span>
                 <input type="date" id="patient-dob" name="dob" required>
             </div>
             <div id="patient-email">
@@ -95,7 +95,7 @@
                 <option value="neurology">Neurology</option>
                 <option value="pediatrics">Pediatrics</option>
                 <option value="orthopedics">Orthopedics</option>
-                
+
             </select>
 
             <label for="doctor-email">Email</label>
@@ -129,5 +129,281 @@
         </div>
     </div>
 </footer>
+</html>-->
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Page</title>
+    <link rel="stylesheet" href="SignUp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="SignUp.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="Home.html" class="logo">
+                <img src="images/brain logo.png" alt="CURA Logo">
+                <span>CURA</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="signup-section">
+        <div class="signup-container">
+            <h1>Create an Account</h1>
+            <div id="role-selection">
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="role" value="patient" checked onchange="showForm()"> Patient
+                    </label>
+                    <label>
+
+                        <input type="radio" name="role" value="doctor" onchange="showForm()"> Doctor
+                    </label>
+                </div>
+            </div>
+
+            <form id="patient-form" class="hidden" action="patient_homepage.html" method="POST">
+                <div id="patient-first-name">
+                    <span>First Name</span>
+                    <input type="text" id="patient-first-name" name="first_name" required>
+                </div>
+                <div id="patient-last-name">
+                    <span>Last Name</span>
+                    <input type="text" id="patient-last-name" name="last_name" required>
+                </div>
+                <div id="patient-id">
+                    <span> Patient ID</span>
+                    <input type="text" id="patient-id" name="id" required>
+                </div>
+                <div id="patient-gender">
+                    <span>Gender</span>
+                    <select id="patient-gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div id="patient-dob">
+                    <span>Date of Birth</span>
+                    <input type="date" id="patient-dob" name="dob" required>
+                </div>
+                <div id="patient-email">
+                    <span>Email</span>
+                    <input type="email" id="patient-email" name="email" required>
+                </div>
+                <div id="patient-password">
+                    <span>Password</span>
+                    <input type="password" id="patient-password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+
+            <form id="doctor-form" class="hidden" action="doctor_homepage.html" method="POST">
+                <span>First Name</span>
+            <input type="text" id="doctor-first-name" name="first_name" required>
+
+            <span>Last Name</span>
+            <input type="text" id="doctor-last-name" name="last_name" required>
+
+            <span>ID</span>
+            <input type="text" id="doctor-id" name="id" required>
+
+            <span>Photo</span>
+            <input type="file" id="doctor-photo" name="photo" accept="image/*" required>
+
+            <span>Speciality</span>
+            <select id="doctor-speciality" name="speciality" required>
+            <option value="">Select Speciality</option>
+            <option value="Child">Child and Adolescent Therapy</option>
+            <option value="couple">couple Therapy</option>
+            <option value="Psychiatry">Psychiatry</option>
+            <option value="Trauma">Trauma Therapy</option>
+
+            </select>
+
+    <label for="doctor-email">Email</label>
+    <input type="email" id="doctor-email" name="email" required>
+
+    <label for="doctor-password">Password</label>
+    <input type="password" id="doctor-password" name="password" required>
+
+    <button type="submit" class="btn">Sign Up</button>
+</form>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CURA | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Page</title>
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="SignUp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="SignUp.js"></script>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="Home.html" class="logo">
+                <img src="images/brain logo.png" alt="CURA Logo">
+                <span>CURA</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Sign-Up Section Start -->
+    <section class="signup-section">
+        <div class="left-column">
+
+            <p> Join Us Today! Be a part of CURA Clinic.</p>
+        </div>
+        <div class="form-container">
+            <h1>Create an Account</h1>
+            <div id="role-selection">
+                <h3>Select Your Role</h3>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="role" value="patient" checked onchange="showForm()"> Patient
+                    </label>
+                    <label>
+                        <input type="radio" name="role" value="doctor" onchange="showForm()"> Doctor
+                    </label>
+                </div>
+            </div>
+            <form id="patient-form" class="hidden" action="#" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="patient-first-name">First Name</label>
+                        <input type="text" id="patient-first-name" name="first_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="patient-last-name">Last Name</label>
+                        <input type="text" id="patient-last-name" name="last_name" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="patient-id">Patient ID</label>
+                        <input type="text" id="patient-id" name="id" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="patient-gender">Gender</label>
+                        <select id="patient-gender" name="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="patient-dob">Date of Birth</label>
+                        <input type="date" id="patient-dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="patient-email">Email</label>
+                        <input type="email" id="patient-email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="patient-password">Password</label>
+                        <input type="password" id="patient-password" name="password" required>
+                    </div>
+                </div>
+                <button type="submit" class="Signupbtn">Sign Up</button>
+            </form>
+
+            <form id="doctor-form" class="hidden" action="doctor_homepage.html" method="POST">
+                <label for="doctor-first-name">First Name</label>
+                <input type="text" id="doctor-first-name" name="first_name" required>
+
+                <label for="doctor-last-name">Last Name</label>
+                <input type="text" id="doctor-last-name" name="last_name" required>
+
+                <label for="doctor-id">ID</label>
+                <input type="text" id="doctor-id" name="id" required>
+
+                <label for="doctor-photo">Photo</label>
+                <input type="file" id="doctor-photo" name="photo" accept="image/*" required>
+
+                <label for="doctor-speciality">Speciality</label>
+                <select id="doctor-speciality" name="speciality" required>
+                    <option value="">Select Speciality</option>
+                    <option value="Child">Parent & Child Therapy</option>
+                    <option value="couple">Individual Conseling</option>
+                    <option value="Psychiatry">Workshops & Seminars</option>
+
+                </select>
+
+                <label for="doctor-email">Email</label>
+                <input type="email" id="doctor-email" name="email" required>
+
+                <label for="doctor-password">Password</label>
+                <input type="password" id="doctor-password" name="password" required>
+
+                <button type="submit" class="Signupbtn">Sign Up</button>
+            </form>
+        </div>
+    </section>
+    <!-- Sign-Up Section End -->
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CURA | All Rights Reserved</p>
+            <ul class="social-links">
+                <li><a href="#"><img src="images/twitter.webp" alt="Twitter"></a></li>
+                <li><a href="#"><img src="images/instagram.webp" alt="Instagram"></a></li>
+                <li><a href="#"><img src="images/email.png" alt="Email"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Footer End -->
+</body>
+
 </html>
+
+
+
+
 

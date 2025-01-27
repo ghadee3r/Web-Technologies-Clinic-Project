@@ -1,70 +1,104 @@
 ﻿
-.signup-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 700px;
-    height:700px; 
-}
-#role-selection{
-    display:flex;
-    justify-content:center;
+/* Sign-Up Section */
+.signup-section {
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: flex-start;
+    padding: 3rem;
     
+    max-width: 1200px;
+    //margin: 2rem auto;
+    background-color:whitesmoke;
 }
+
+.left-column {
+    flex: 1;
+    background-image: url('images/signup3.jpg');
+    padding: 2rem;
+    //border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    height:720px;
+}
+
+    .left-column h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: #002324;
+    }
+
+    .left-column p {
+        font-size: 5rem;
+        margin-bottom: 1.5rem;
+        color: #555;
+    }
 
 .hidden {
     display: none;
-
 }
 
-.signup-container input, .signup-container select {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 12px;
+.form-container {
+    flex: 1;
+    background-color: #FFFFFF;
+    padding: 2rem;
+    //border-radius: 10px;
+    //box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-label {
-    text-align: center;
-    font-weight: bold;
-}
+    .form-container h1{
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: #555;
+    }
+    .form-container h3 {
+        color: #555;
 
-.radio-group{
-    display:flex;
-}
-
-input, select, button {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-button {
-    width: 200px;
-    height: 40px;
-    width: 80%;
-    padding: 10px;
-    background-color: #1B2A1D;
-    color: #E1B599;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-    button:hover {
-        background-color: #9EA677;
     }
 
-.signup-container h1 {
-    text-align:center;
-    margin-bottom: 20px;
+
+        .radio-group {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+    .radio-group label {
+        font-size: 1rem;
+        color: #555;
+        cursor: pointer;
+    }
+
+    .radio-group input {
+        margin-right: 0.5rem;
+    }
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #555;
 }
- 
+
+form input,
+form select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form .Signupbtn {
+    background-color: #EBFACF; /* Lime from color palette */
+    color: #002324; /* Black from color palette */
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top:10px;
+}
+
+ .Signupbtn:hover {
+    background-color: #A1AD95; /* Khaki from color palette */
+}

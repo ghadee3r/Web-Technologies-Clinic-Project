@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presribe Medication</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="Medication.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="Home.html" class="logo">
+                <img src="images/brain logo.png" alt="CURA Logo">
+                <span>CURA</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Medication Form Section -->
+    <section class="medication-section">
+        <div class="medication-container">
+            <div class="info-box">
+            </div>
+            <div class="form-box">
+                <h1>Patient's Medications</h1>
+                <form action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="patient-name">Patient's Name</label>
+                            <input type="text" id="patient-name" name="patient_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="patient-age">Age</label>
+                            <input type="number" id="patient-age" name="age" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="gender" value="male"> Male
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="female"> Female
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Medications</label>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="medications" value="aspirin"> Aspirin
+                            </label>
+                            <label>
+                                <input type="checkbox" name="medications" value="ibuprofen"> Ibuprofen
+                            </label>
+                            <label>
+                                <input type="checkbox" name="medications" value="paracetamol"> Paracetamol
+                            </label>
+                            <label>
+                                <input type="checkbox" name="medications" value="antibiotics"> Antibiotics
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="prebtn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Medication Form Section End -->
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CURA | All Rights Reserved</p>
+            <ul class="social-links">
+                <li><a href="#"><img src="images/twitter.webp" alt="Twitter"></a></li>
+                <li><a href="#"><img src="images/instagram.webp" alt="Instagram"></a></li>
+                <li><a href="#"><img src="images/email.png" alt="Email"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+</body>
+</html>
