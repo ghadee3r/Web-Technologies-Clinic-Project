@@ -4,14 +4,13 @@ body {
     margin: 0;
     padding: 0;
     color: #004d3b;
-
     box-sizing: border-box;
-    background-color: #ffffff; /* Mauve from color palette */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-
 }
+
+
 
 a {
     font-weight: bold;
@@ -27,31 +26,37 @@ a {
 
 /* Navbar Styles */
 .navbar {
-    background-color: #ffffff;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1); 
+
     padding: 1rem 2rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    text-align: center;
     color: #004d3b;
 }
+
 
     .navbar .logo {
         display: flex;
         align-items: center;
     }
 
-        .navbar .logo img {
-            height: 60px;
-            margin-right: 10px;
-        }
 
     .navbar .logo {
-        font-size: 3rem;
+
+        font-size: 2.5em;
         font-weight: bold;
         color: #004d3b;
         text-decoration: none;
     }
 
+/*
+
+        .navbar .logo img {
+            height: 60px;
+            margin-right: 10px;
+        }
+            */
 
 /* Footer */
 .footer {
