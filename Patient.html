@@ -3,27 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CURA-Patient Homepage</title>
+        <title>Patient Homepage</title>
+        <link rel="stylesheet" href="Home.css">
         <link rel="stylesheet" href="Main.css">
-        <link rel="stylesheet" href="logIn.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     </head>
+
     <body>
+        <nav class="navbar">
+            <div class="container">
+                <a href="Home.html" class="logo">
+                    <img src="images/brain logo.png" alt="CURA Logo">
+                    <span>CURA</span>
+                </a>
+            </div>
+        </nav>
+
         <header>
-            <div class="header-container">
-              <div class="logo-container">
-                <img src="" alt="Clinic Logo" class="logo">
-                <h1 class="clinic-name">CURA</h1>
-              </div>
-              <nav>
-                <a href="index.html">Sign Out</a>
-              </nav>
+            <h1>Welcome [Name]!</h1>
+            <div id="patientInformation">
+                <p>[Patient Information]</p>
             </div>
         </header>
 
-        <h1>Welcome [Name]!</h1>
-        <div id="patientInformation">
-            <p>[Patient Information]</p>
-        </div>
         <nav>
             <a href="booking.html">Book an appointment.</a>
         </nav>
@@ -55,6 +57,21 @@
             <tbody id="appointmentsTableBody">
             </tbody>
         </table>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 CURA | All Rights Reserved</p>
+                <p class="contact-info">
+                    <strong>Address:</strong> 7720 Riyadh, Laysen Valley, 44321<br>
+                    <strong>Phone:</strong> (966) 556-789-5900
+                </p>
+                <ul class="social-links">
+                    <li><img src="images/twitter.webp" alt="Twitter"></li>
+                    <li><img src="images/free-instagram-logo-icon-3497-thumb.png" alt="Instagram"></li>
+                    <li><img src="images/Email542689.png" alt="Email"></li>
+                </ul>
+            </div>
+        </footer>
     </body>
   </html>
 
