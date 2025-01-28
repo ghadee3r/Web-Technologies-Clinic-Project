@@ -1,13 +1,16 @@
 /* General Body Styling */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family:'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
+    color: #004d3b;
+
     box-sizing: border-box;
     background-color: #ffffff; /* Mauve from color palette */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
 }
 
 a {
@@ -19,17 +22,17 @@ a {
 }
 
     a:hover {
-        color: #9EA677;
+    background-color: #c6c6c6;
     }
 
 /* Navbar Styles */
 .navbar {
-    background-color: #A1AD95;
+    background-color: #ffffff;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: #004d3b;
 }
 
     .navbar .logo {
@@ -38,39 +41,21 @@ a {
     }
 
         .navbar .logo img {
-            height: 40px;
+            height: 60px;
             margin-right: 10px;
         }
 
     .navbar .logo {
-        font-size: 1.5rem;
+        font-size: 3rem;
         font-weight: bold;
-        color: white;
+        color: #004d3b;
         text-decoration: none;
     }
-
-    .navbar .nav-links {
-        list-style: none;
-        display: flex;
-        gap: 1.5rem;
-        margin: 0;
-        padding: 0;
-    }
-
-        .navbar .nav-links a {
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-            .navbar .nav-links a:hover {
-                color: #A1AD95; /* Khaki from color palette */
-            }
 
 
 /* Footer */
 .footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/IMG_2375.jpg') center/cover no-repeat;
     background-color: #A1AD95; /* Black from color palette */
     color: white;
     text-align: center;

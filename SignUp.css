@@ -88,17 +88,22 @@ form select {
 }
 
 form .Signupbtn {
-    background-color: #EBFACF; /* Lime from color palette */
-    color: #002324; /* Black from color palette */
-    padding: 0.75rem 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    padding: 10px;
+    background-color: #1B2A1D;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
-    margin-top:10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow here */
 }
 
+
  .Signupbtn:hover {
-    background-color: #A1AD95; /* Khaki from color palette */
+    background-color: #c6c6c6;
 }
+
