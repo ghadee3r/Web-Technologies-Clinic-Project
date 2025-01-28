@@ -1,6 +1,6 @@
 ﻿
 /* Sign-Up Section */
-.signup-section {
+    .signup-section {
     display: flex;
     /*justify-content: space-between;*/
     align-items: flex-start;
