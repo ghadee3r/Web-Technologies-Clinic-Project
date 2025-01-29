@@ -4,12 +4,12 @@
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     padding: 3rem;
+
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
     max-width: 70%; /* Increased width */
     background-color: white; /* White background */
     margin: 5% auto; /* Adds spacing to prevent footer overlap */
     border-radius: 10px; /* Rounded edges for a modern look */
-}
 
 /* Ensure Full Page Height Without Overlapping Footer */
 body {
