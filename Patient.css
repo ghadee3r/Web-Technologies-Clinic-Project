@@ -28,12 +28,18 @@
 }
 
 #patientAppointments tbody tr:nth-child(even) {
-  background-color: #ffe4e6;
-  color: #ad6464;
+  background-color: #e4e4e4;
+  color: #353535;
+}
+
+#patientAppointments tbody tr:nth-child(even):hover {
+  background-color: #c0c0c0;
+  color: #1f1f1f;
 }
 
 #patientAppointments tbody tr:hover {
-  background: #d8c9ca
+  background: #f4f4f4;
+  color: #555;
 }
 
 #patientAppointments th {
@@ -48,43 +54,94 @@
   border-bottom: none;
 }
 
+
+
 #linkToBook {
-	float: right;
-	text-align: center;
-	border-bottom: 1px solid #f3f4f6;
-	background-color: #ffe4e6;
-	color: #ad6464;
-	margin: 10px;
-	padding: 10px;
-	border-radius: 10px;
+  margin-top: 10px; /* Space between doctor profile and button */
+  text-align: center;
+  border-bottom: 1px solid #f3f4f6;
+  background: #1B2A1D;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px; /* Set a specific width for the button */
+  margin-left: auto; /* Center it horizontally */
+  margin-right: auto; /* Center it horizontally */
+  display: block; /* Ensure it is a block element */
 }
 
-#linkToBook:hover {
-  background: #d8c9ca
+#linkToBook:hover{
+background-color: #c6c6c6;}
+
+
+.welcome-section {
+  display: flex;
+  flex-direction: row; /* Keep items in a row */
+  align-items: center; /* Align items to the top */
+  background: white;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  width: 99%;
+  max-width: 1700px;
 }
 
+.doctor-profile-container {
+  display: flex;
+  flex-direction: column; /* Stack doctor profile and button vertically */
+  flex: 1; /* Take remaining space */
+}
+
+
+.welcome-left {
+    font-family:'Times New Roman', Times, serif;
+    flex: 1;
+    background-image: url('images/oceanlike.jpg');
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    padding: 2rem;
+    border-radius: 10px 0 0 10px; /* Round left side only */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    height:520px;
+font-size: 1.8rem;
+
+color: #e4e7e7;
+}
+
+
+
+/* 
 #patientHeader {
+  background-image: url('images/mdrrrrri.jpg');
+  background-repeat: no-repeat;  
+  background-size: cover;  
+  background-position: center;  
     text-align: center;
-    background-color: #ffebed;
+
+} */
+
+
+
+.doctor-profile {
+  padding: 15px;
+  text-align: center;
+  font-size: large;
+  background-color: #eeeeeebe;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  margin: 15px ; /* Margin only on top and bottom */
+  width: 600px; /* Set a specific width for the button */
+  margin-left: auto; /* Center it horizontally */
+  margin-right: auto; /* Center it horizontally */
+  display: block; /* Ensure it is a block element */
 }
 
-#patientHeader span {
-    color: #ad6464;
-}
-
-#patientInformation {
-    background-color: #fff0f2;
-    padding: 15px 20px;
-    border-radius: 12px;
-    margin: 15px;
-    display: inline-block;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#patientInformation pre {
+/* #patientInformation pre {
     margin: 5px 0;
     font-size: 1em;
-}
+    font-family:'Times New Roman', Times, serif;
+} */
 
 .cancel-btn {
   background-color: #fff; /* Light pink like your table rows */

@@ -99,8 +99,8 @@ th {
 
 .confirm-btn {
 
-    background: #d8c9ca;
-    color: #ad6464;
+    background-color: #d8c9ca; 
+    color: #ad6464; 
  
     border: none;
     padding: 5px 10px;
