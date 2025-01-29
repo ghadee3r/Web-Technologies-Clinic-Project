@@ -74,8 +74,9 @@ background-color: #c6c6c6;
 table {
     width: 100%;
     border-collapse: collapse;
-    color: #6C6C6C;
+   
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 tr:hover {
@@ -89,15 +90,30 @@ th, td {
     text-align: center;
 }
 th {
+    background-color: #002324;
+    color: #fff;
+}
+
+
+
+
+.confirm-btn {
+
     background: #d8c9ca;
     color: #ad6464;
-}
-.confirm-btn {
-    background: #E4E7E1;
+ 
     border: none;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.confirm-btn:hover {
+    color: #ffffff;
+    background: #b16d72;
+    transform: scale(1.05);
+
+    
 }
 .prescribe-btn {
     color: #517e63;
