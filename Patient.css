@@ -1,4 +1,3 @@
-
 #PTableContainer {
   padding: 1rem;
   display: flex;
@@ -49,18 +48,56 @@
   border-bottom: none;
 }
 
-#linkToBookContainer {
-	margin: 10px;
-	padding: 10px;
-	width: 200px;
-	display: flex;
-	align-items: flex-end;
-}
-
 #linkToBook {
-	width: 180px;
+	float: right;
 	text-align: center;
 	border-bottom: 1px solid #f3f4f6;
 	background-color: #ffe4e6;
-	color: #ad6464
+	color: #ad6464;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#linkToBook:hover {
+  background: #d8c9ca
+}
+
+#patientHeader {
+    text-align: center;
+    background-color: #ffebed;
+}
+
+#patientHeader span {
+    color: #ad6464;
+}
+
+#patientInformation {
+    background-color: #fff0f2;
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin: 15px;
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#patientInformation pre {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.cancel-btn {
+  background-color: #fff; /* Light pink like your table rows */
+  color: #ad6464; /* Darker pink for contrast */
+  border: 0.5px solid #ad6464; /* Subtle border */
+  padding: 4px 7px;
+  border-radius: 8px; /* Rounded edges */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.cancel-btn:hover {
+  background-color: #cc0000;
+  color: #fff;
+    border: none;
 }
