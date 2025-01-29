@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
       // Redirect to homepage or display a success message
       alert("Appointment booked successfully!");
-      window.location.href = "home.html"; // Change "/homepage" to your desired URL
+      window.location.href = "Patient.html"; 
     });
   });
   

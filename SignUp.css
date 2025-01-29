@@ -1,24 +1,47 @@
 ﻿
-/* Sign-Up Section */
-    .signup-section {
+/* Sign-Up Section *//* Centered Sign-Up Section */.signup-section {
     display: flex;
-    /*justify-content: space-between;*/
-    align-items: flex-start;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     padding: 3rem;
-    
-    max-width: 1200px;
-    //margin: 2rem auto;
-    background-color:whitesmoke;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+    max-width: 70%; /* Increased width */
+    background-color: white; /* White background */
+    margin: 5% auto; /* Adds spacing to prevent footer overlap */
+    border-radius: 10px; /* Rounded edges for a modern look */
 }
 
+/* Ensure Full Page Height Without Overlapping Footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures content doesn’t overlap footer */
+}
+
+/* Push Footer to Bottom */
+footer {
+    margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+/* Adjust Left Column */
 .left-column {
     flex: 1;
     background-image: url('images/signup3.jpg');
-    padding: 2rem;
-    //border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    height:720px;
+    height: 720px;
+    width: 100rem;
+    border-radius: 10px 0 0 10px; /* Round left side only */
 }
+
+/* Adjust Form Container */
+.form-container {
+    flex: 1;
+    padding: 2rem;
+    background: white;
+    border-radius: 0 10px 10px 0; /* Round right side only */
+}
+
+
 
     .left-column h2 {
         font-size: 1.8rem;
@@ -34,14 +57,6 @@
 
 .hidden {
     display: none;
-}
-
-.form-container {
-    flex: 1;
-    background-color: #FFFFFF;
-    padding: 2rem;
-    //border-radius: 10px;
-    //box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
     .form-container h1{
