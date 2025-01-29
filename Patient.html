@@ -11,25 +11,34 @@
     </head>
 
     <body>
-     <nav class="navbar">
-        <div class="container">
-            <a href="Home.html" class="logo">
-                <span>CURA</span>
-            </a>
-        </div>
-    </nav>
+        <nav class="navbar">
+            <div class="container">
+                <a href="Home.html" class="logo">
+                    <span>CURA</span>
+                </a>
+            </div>
+        </nav>
 
-        <header>
-            <h1>Welcome [Name]!</h1>
+        <header id="patientHeader">
+            <div>
+                <h1>Welcome, <span id="patientName">Reem</span>!</h1>
+                <p>Your journey to wellness starts here.</p>
+            </div>
             <div id="patientInformation">
-                <p>[Patient Information]</p>
+                <pre>
+Name: Reem Khaled
+Patient ID: 1176574389
+Gender: Female
+Date of Birth:24/02/1995
+Email: reem.khaled@gmail.com
+                </pre>
             </div>
         </header>
-        <div id"linkToBookContainer">
-            <nav id="linkToBook">
-                <a href="booking.html">Book an appointment.</a>
-            </nav>
-        </div>
+
+        <nav>
+            <a id="linkToBook" href="booking.html">Book an appointment.</a>
+        </nav>
+
         <table id="patientAppointments">
             <thead>
                 <td>Time</td>
@@ -45,23 +54,23 @@
                 <td>Dr. Sara Ahmad</td>
                 <td></td>
                 <td>Pending</td>
-                <td>Cancel</td>
+                <td><button class="cancel-btn">Cancel</button></td>
             </tr>
             <tr>
                 <td>10 PM</td>
                 <td>14/2/2025</td>
-                <td>Dr. Saleh Abdullah</td>
+                <td>Dr. Ahmad Abdulaziz</td>
                 <td></td>
                 <td>Confirmed</td>
-                <td>Cancel</td>
+                <td><button class="cancel-btn">Cancel</button></td>
             </tr>
             <tr>
-                <td>10 PM</td>
-                <td>14/2/2025</td>
+                <td>9 AM</td>
+                <td>3/3/2025</td>
                 <td>Dr. Saleh Abdullah</td>
                 <td></td>
                 <td>Confirmed</td>
-                <td>Cancel</td>
+                <td><button class="cancel-btn">Cancel</button></td>
             </tr>
             <tbody id="appointmentsTableBody">
             </tbody>
