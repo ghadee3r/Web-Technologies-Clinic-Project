@@ -110,22 +110,23 @@
     margin-right: 0.5rem;
 }
 
-.prebtn {
-    background-color: #EBFACF; /* Lime from color palette */
-    color: #002324;
+form .prebtn {
+    font-family: 'Times New Roman', Times, serif;
     width: 100%;
-    padding: 0.75rem;
-    //background-color: #0463FA;
-    //color: white;
+    padding: 10px;
+    background-color: #1B2A1D;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-    .prebtn:hover {
-        background-color: #A1AD95;
-        ;
-    }
+
+.prebtn:hover {
+    background-color: #c6c6c6;
+}
 

@@ -37,6 +37,8 @@
 
     .hero .btn:hover {
         background-color: #c6c6c6;
+        transform: scale(1.05);
+
     }
 
 .hero .btn-alt {
@@ -46,12 +48,13 @@
 
     .hero .btn-alt:hover {
         background-color: #f4f4f4;
+        transform: scale(1.05);
+
     }
 
 /* About Us Section */
 .about {
     padding: 3rem 1rem;
-    background-color: #FFFFFF; /* Background color for the section */
 }
 
 .about-container {

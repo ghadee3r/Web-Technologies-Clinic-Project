@@ -13,9 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Call showForm once to display the correct form by default
-    showForm();
-
     // Attach event listeners to the radio buttons
     const radioButtons = document.querySelectorAll('input[name="role"]');
     radioButtons.forEach(radio => {
