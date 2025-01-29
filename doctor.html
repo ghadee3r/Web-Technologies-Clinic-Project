@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Main.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family:'Times New Roman', Times, serif;
+
+        }
+        .welcome-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            height: 520px;
+        }
+        .welcome-left {
+            font-family:'Times New Roman', Times, serif;
+            flex: 1;
+            background-image: url('images/leeaves.jpg');
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            height:520px;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: #e4e7e7;
+        }
+        .doctor-profile {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-pic {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .signout-btn {
+            display: inline-block;
+            background: #1B2A1D;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .signout-btn:hover {
+    background-color: #c6c6c6;
+  }
+        
+        .dashboard {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+            gap: 20px;
+        }
+        .appointments, .patients {
+            width: 45%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: #6C6C6C;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        tr:hover {
+            background: #f4f4f4;
+        }
+        tr:hover td {
+            color: #555;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background: #d8c9ca;
+            color: #ad6464;
+        }
+        .confirm-btn {
+            background: #E4E7E1;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .prescribe-btn {
+            color: #517e63;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="Home.html" class="logo">
+                <img src="images/brain logo.png" alt="CURA Logo">
+                <span>CURA</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="welcome-left">
+            <p>Welcome to CURA,</p> 
+                <h2>Dr. John!</h2>
+        </div>
+        <div class="doctor-profile">
+            <img src="images/doctorpic.jpg" alt="Doctor Photo" class="profile-pic">
+            <p><strong>Name:</strong> Dr. John Doe</p>
+            <p><strong>ID:</strong> 123456</p>
+            <p><strong>Email:</strong> doctor@example.com</p>
+            <p><strong>Specialty:</strong> Therapy</p>
+            <a href="homepage.html" class="signout-btn">Sign Out</a>
+        </div>
+    </section>
+    
+    <!-- Main Content Section -->
+    <section class="dashboard">
+        <div class="appointments">
+            <h2>Upcoming Appointments</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Service</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rana</td>
+                        <td>20</td>
+                        <td>F</td>
+                        <td>Therapy</td>
+                        <td>02/13</td>
+                        <td>10:00</td>
+                        <td><button class="confirm-btn">Pending</button></td>
+                    </tr>
+                    <tr>
+                        <td>Ali</td>
+                        <td>25</td>
+                        <td>M</td>
+                        <td>Consultation</td>
+                        <td>02/14</td>
+                        <td>12:00</td>
+                        <td>Confirmed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="patients">
+            <h2>Patients</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Patient</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Medications</th>
+                        <th>Prescribe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ali</td>
+                        <td>25</td>
+                        <td>M</td>
+                        <td>-</td>
+                        <td><a href="prescribe.html" class="prescribe-btn">Prescribe</a></td>
+                    </tr>
+                    <tr>
+                        <td>Rana</td>
+                        <td>20</td>
+                        <td>F</td>
+                        <td>Fluoxetine</td>
+                        <td><a href="prescribe.html" class="prescribe-btn">Prescribe</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CURA | All Rights Reserved</p>
+            <p class="contact-info">
+                <strong>Address:</strong> 7720 Riyadh, Laysen Valley, 44321<br>
+                <strong>Phone:</strong> (966) 556-789-5900
+            </p>
+            <ul class="social-links">
+                <li><img src="images/twitter.webp" alt="Twitter"></li>
+                <li><img src="images/free-instagram-logo-icon-3497-thumb.png" alt="Instagram"></li>
+                <li><img src="images/Email542689.png" alt="Email"></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
