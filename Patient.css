@@ -18,7 +18,7 @@
 }
 
 #patientAppointments thead {
-  background-color: #002324; /* Light pink */
+  background-color: #002324;
   color: #fff;
 }
 
@@ -28,13 +28,13 @@
   border-bottom: 1px solid #f3f4f6;
 }
 
-
-#patientAppointments tbody tr:nth-child(odd) {
-  background: #c6c6c6; /* Very light pink */
+#patientAppointments tbody tr:nth-child(even) {
+  background-color: #ffe4e6;
+  color: #ad6464;
 }
 
 #patientAppointments tbody tr:hover {
-  background: #ffe4e6; /* Hover effect */
+  background: #d8c9ca
 }
 
 #patientAppointments th {
@@ -47,4 +47,20 @@
 
 #patientAppointments tbody tr:last-child td {
   border-bottom: none;
+}
+
+#linkToBookContainer {
+	margin: 10px;
+	padding: 10px;
+	width: 200px;
+	display: flex;
+	align-items: flex-end;
+}
+
+#linkToBook {
+	width: 180px;
+	text-align: center;
+	border-bottom: 1px solid #f3f4f6;
+	background-color: #ffe4e6;
+	color: #ad6464
 }
