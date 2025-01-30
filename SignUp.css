@@ -1,27 +1,25 @@
 ﻿
-/* Sign-Up Section *//* Centered Sign-Up Section */.signup-section {
+.signup-section {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
-    max-width: 70%; /* Increased width */
-    background-color: white; /* White background */
-    margin: 5% auto; /* Adds spacing to prevent footer overlap */
-    border-radius: 10px; /* Rounded edges for a modern look */
+    justify-content: center; 
+    align-items: center; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
+    max-width: 70%; 
+    background-color: white; 
+    margin: 5% auto; 
+    border-radius: 10px;
 
-/* Ensure Full Page Height Without Overlapping Footer */
-body {
+
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures content doesn’t overlap footer */
-}
+    min-height: 100vh; 
 
-/* Push Footer to Bottom */
+
 footer {
-    margin-top: auto; /* Ensures footer stays at the bottom */
+    margin-top: auto; 
 }
 
-/* Adjust Left Column */
+
 .left-column {
     padding: 2rem;
     flex: 1;
@@ -29,15 +27,15 @@ footer {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     height: 720px;
     width: 100rem;
-    border-radius: 10px 0 0 10px; /* Round left side only */
+    border-radius: 10px 0 0 10px;
 }
 
-/* Adjust Form Container */
+
 .form-container {
     flex: 1;
     padding: 2rem;
     background: white;
-    border-radius: 0 10px 10px 0; /* Round right side only */
+    border-radius: 0 10px 10px 0; 
 }
 
 
