@@ -130,7 +130,7 @@ form textarea {
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow here */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .submit-button:hover {
