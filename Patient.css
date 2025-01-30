@@ -16,8 +16,14 @@ body {
   font-weight: bold;
   margin-top: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  width: 67px;
 
 }
+
+.signout-btn:hover {
+background-color: #c6c6c6;
+}
+
 
 .doctor-photo {
   width: 100px; /* Adjust size as needed */
@@ -184,22 +190,9 @@ color: #e4e7e7;
     border: none;
 }
 
-<<<<<<< Updated upstream
-#patientSignOut {
-    display: inline-block;
-    background: #1B2A1D;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 10px;
-}
 
-#patientSignOut:hover{
-background-color: #c6c6c6;
-=======
+
 #patientNameInfo {
   font-size: 3rem;
->>>>>>> Stashed changes
+
 }
