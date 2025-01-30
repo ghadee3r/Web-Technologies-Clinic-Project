@@ -47,6 +47,8 @@ color: #e4e7e7;
     border-radius: 5px;
     font-weight: bold;
     margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
 }
 
 .signout-btn:hover {
@@ -74,8 +76,9 @@ background-color: #c6c6c6;
 table {
     width: 100%;
     border-collapse: collapse;
-    color: #6C6C6C;
+   
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 tr:hover {
@@ -89,16 +92,54 @@ th, td {
     text-align: center;
 }
 th {
-    background: #d8c9ca;
-    color: #ad6464;
+    background-color: #002324;
+    color: #fff;
 }
+
+
+
+
 .confirm-btn {
-    background: #E4E7E1;
+
+    background-color: #d8c9ca;
+    color: #ad6464; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border: none;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
 }
+
+.confirm-btn:hover {
+    color: #ffffff;
+    background: #b16d72;
+    transform: scale(1.05);
+
+    
+}
+
+.confirm-btn {
+    background: #b16d72;
+    color: #fff;
+      border: none;
+    padding: 4px 7px;
+    border-radius: 8px; /* Rounded edges */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Times New Roman', Times, serif;
+    width: 80px;
+  
+  }
+  
+  .confirm-btn:hover {
+    background-color: #fff; /* Light pink like your table rows */
+    color: #ad6464; /* Darker pink for contrast */
+    border: 0.5px solid #ad6464; /* Subtle border */
+
+
+
+   
+  }
 .prescribe-btn {
     color: #517e63;
     text-decoration: none;
