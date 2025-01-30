@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="logIn.css">
     <link rel="stylesheet" href="Main.css">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -68,6 +67,27 @@
   </div>
 </footer>
 <!-- Footer End -->
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const loginButton = document.querySelector(".submit-button");
+
+    loginButton.addEventListener("click", function () {
+      const selectedRole = document.querySelector('input[name="role"]:checked');
+
+      if (selectedRole) {
+        if (selectedRole.value === "patient") {
+          window.location.href = "Patient.html";
+        } else if (selectedRole.value === "doctor") {
+          window.location.href = "doctor.html";
+        }
+      } else {
+        alert("Please select a user role before logging in.");
+      }
+    });
+  });
+</script>
+
 </body>
 
 </html>
