@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Attach event listeners to the radio buttons
+   
     const radioButtons = document.querySelectorAll('input[name="role"]');
     radioButtons.forEach(radio => {
         radio.addEventListener('change', showForm);
