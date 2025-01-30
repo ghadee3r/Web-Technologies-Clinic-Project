@@ -117,9 +117,9 @@ form .Signupbtn {
  .Signupbtn:hover {
     background-color: #c6c6c6;
 }
-
 form select {
 
     font-family: 'Times New Roman', Times, serif;
-}
+} 
+
 }
